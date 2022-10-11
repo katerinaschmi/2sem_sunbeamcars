@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Roboto+Condensed:wght@300;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Accessories</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <h1 class="h1">SunbeamCars Inc.</h1>
+        </a>
+        <a href="about.html" class="navitem">About Us</a>
+        <a href="#">
+            <p class="login">Log in</p>
+        </a>
+        <a href="#"><i class="material-icons">account_circle</i></a>
+    </header>
+
+    <img src="/background2.jpg" alt="background" class="backgroundpic">
+
+    <main class="maincontent">
+        <div id="totaloutput" class="totaloutput"></div><br>
+
+        <form id="form2" class="checkboxform">
+            <fieldset>
+                <legend class="legend">Select accessories (excl. VAT)</legend>
+                <br>
+                <div>
+                    <div class="checkboxitem">
+                        <label class="label" for="checkbox">Second driver kr. 199,00</label>&nbsp;
+                        <input type="checkbox" data-item="Second driver" id="checkbox" class="thebox" value="199,00"
+                            onchange="calculateTotal(this, this.value)"><br>
+                    </div>
+                    <div class="checkboxitem">
+                        <label class="label" for="checkbox">Child seat (5-12 year) kr. 155,00</label>&nbsp;
+                        <input type="checkbox" data-item="Child seat" class="thebox" value="155,00"
+                            onchange="calculateTotal(this, this.value)"><br>
+                    </div>
+                    <div class="checkboxitem">
+                        <label class="label" for="checkbox">Roadside Aid kr. 120,00</label>&nbsp;
+                        <input type="checkbox" data-item="Roadside Aid" class="thebox" value="120,00"
+                            onchange="calculateTotal(this, this.value)"><br>
+                    </div>
+                    <div class="checkboxitem">
+                        <label class="label" for="checkbox">Baby seat (0-1 year) kr. 100,00</label>&nbsp;
+                        <input type="checkbox" data-item="Baby seat" class="thebox" value="100,00"
+                            onchange="calculateTotal(this, this.value)"><br>
+                    </div>
+                    <div class="checkboxitem">
+                        <label class="label" for="checkbox">Child seat (1-4 year) kr. 140,00</label>&nbsp;
+                        <input type="checkbox" data-item="Child seat 2" class="thebox" value="140,00"
+                            onchange="calculateTotal(this, this.value)"><br>
+                    </div>
+                    <div class="checkboxitem">
+                        <label class="label" for="checkbox">GPS Navigation kr. 250,00</label>&nbsp;
+                        <input type="checkbox" data-item="GPS" class="thebox" value="250,00"
+                            onchange="calculateTotal(this, this.value)"><br>
+                    </div>
+                    <div class="checkboxitem">
+                        <label class="label" for="checkbox">Snow chains kr. 188,00</label>&nbsp;
+                        <input type="checkbox" data-item="Snow chains" class="thebox" value="188,00"
+                            onchange="calculateTotal(this, this.value)"><br>
+                    </div>
+                </div>
+                <button type="submit" class="continue">Continue</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <div id="output"></div>
+    <script src="accessories.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+[
+    {
+        "name": "Suzuki swift",
+        "category": "Category: Budget",
+        "persons": 4,
+        "suitcases": 1,
+        "comfort": "Comfort: low",
+        "image": "suzukiswift.png",
+        "priceperday": 100
+    },
+
+    { 
+        "name": "Mazda 3",
+        "category": "Category: Standart",
+        "persons": 5,
+        "suitcases": 3,
+        "comfort": "Comfort: medium",
+        "image": "Mazda3.png",
+        "priceperday": 160
+    },
+
+    { 
+        "name": "Citroën Grand C4 Picasso",
+        "category": "Category: Minivan",
+        "persons": 7,
+        "suitcases": 4,
+        "comfort": "Comfort: high",
+        "image": "Picasso.png",
+        "priceperday": 205
+    }
+]

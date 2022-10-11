@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Roboto+Condensed:wght@300;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Customer form</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <h1 class="h1">SunbeamCars Inc.</h1>
+        </a>
+        <a href="about.html" class="navitem">About Us</a>
+        <a href="#">
+            <p class="login">Log in</p>
+        </a>
+        <a href="#"><i class="material-icons">account_circle</i></a>
+    </header>
+
+    <img src="/background2.jpg" alt="background" class="backgroundpic">
+
+    <main>
+        <form id="form3" class="form3">
+            <h2 class="customerinfoh">Your Information</h2><br>
+            <div>
+                <div class="leftside">
+                    <label class="label" for="name">First name:</label><br>
+                    <input type="text" id="firstname" class="customerinfo" required>
+                </div>
+                <div class="rightside">
+                    <label class="label" for="name">Last name:</label><br>
+                    <input type="text" id="lastname" class="customerinfo" required>
+                </div>
+                <div class="leftside">
+                    <label class="label" for="streetname">Street name:</label><br>
+                    <input type="text" id="streetname" class="customerinfo" required>
+                </div>
+                <div class="rightside">
+                    <label class="label" for="numberfloor">Number/Floor:</label><br>
+                    <input type="text" id="numberfloor" class="customerinfo" required>
+                </div>
+                <div class="leftside">
+                    <label class="label" for="postcode">Postal code & City:</label><br>
+                    <input type="text" id="postalcode" class="customerinfo" list="codelist" required>
+                </div>
+            </div>
+            <br>
+            <datalist id="codelist"></datalist>
+            <div class="agecheck">
+                <label for="over18" class="agelabel">I am 18 years old</label>
+                <input type="checkbox" name="" id="over18" class="agecheckbox">
+            </div>
+            <button type="submit" class="customerbutton">Book now</button>
+        </form>
+
+        <div id="output"></div>
+
+        <script src="customer.js"></script>
+
+    </main>
+
+</body>
+
+</html>
